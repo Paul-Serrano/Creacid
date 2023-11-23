@@ -1,0 +1,12 @@
+# Configuration for Jekyll
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Build settings
+markdown: kramdown
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
