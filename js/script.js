@@ -229,3 +229,134 @@ for (let i = 0; i < menuItems.length; i++) {
     menu.classList.remove("remove");
   });
 }
+
+
+// Carousel
+
+
+function nextSlide() {
+  slides[currentIndex].classList.add("hidden");
+  console.log("next" + currentIndex);
+  if (currentIndex < totalSlides - 1) {
+    currentIndex++;
+    slides[currentIndex].classList.remove("hidden");
+    slides[currentIndex].classList.remove("grid");
+  } else {
+    currentIndex = 0;
+    slides[currentIndex].classList.remove("hidden");
+    slides[currentIndex].classList.remove("grid");
+  }
+  slides[currentIndex].classList.add("grid");
+  // updateCarousel();
+}
+
+function prevSlide() {
+  slides[currentIndex].classList.add("hidden");
+  if (currentIndex > 0) {
+    currentIndex--;
+    slides[currentIndex].classList.remove("hidden");
+    slides[currentIndex].classList.remove("grid");
+  } else {
+    currentIndex = totalSlides - 1;
+    slides[currentIndex].classList.remove("hidden");
+    slides[currentIndex].classList.remove("grid");
+  }
+  slides[currentIndex].classList.add("grid");
+  // updateCarousel();
+}
+
+function openNav() {
+  menu = document.querySelector("#menu");
+  menu.classList.remove("hidden");
+  menu.classList.add("flex");
+}
+
+function closeNav() {
+  menu = document.querySelector("#menu");
+  menu.classList.remove("flex");
+  menu.classList.add("hidden");
+}
+
+
+
+// Scrolling banner
+
+document.addEventListener("DOMContentLoaded", function () {
+  const scrollingBanner = document.getElementById("scrolling-banner");
+  const bannerContent = scrollingBanner.innerHTML;
+
+  // Dupliquer le contenu pour assurer le défilement continu
+  scrollingBanner.innerHTML = bannerContent + bannerContent;
+});
+
+
+
+
+// Formulaire de contact Popup
+function afficherPopup() {
+  document.getElementById('messagePopup').style.display = 'flex';
+  document.body.style.overflow = 'hidden'; // Bloquer le défilement
+}
+
+function cacherPopup() {
+  document.getElementById('messagePopup').style.display = 'none';
+  document.body.style.overflow = ''; // Réactiver le défilement
+}
+
+
+let cont = 1;
+let xx;
+
+function loopSlider() {
+  xx = setInterval(function () {
+    if (cont === 1) {
+      toggleDisplay("#astuce1", "#astuce2");
+      cont = 2;
+    } else {
+      toggleDisplay("#astuce2", "#astuce1");
+      cont = 1;
+    }
+  }, 8000);
+}
+
+function reinitLoop(time) {
+  clearInterval(xx);
+  setTimeout(loopSlider, time);
+}
+
+function toggleDisplay(hideSelector, showSelector) {
+  const hideElement = document.querySelector(hideSelector);
+  const showElement = document.querySelector(showSelector);
+
+  hideElement.style.display = "none";
+  showElement.style.display = "block";
+}
+
+function nextImage() {
+  if (cont === 1) {
+    toggleDisplay("#astuce1", "#astuce2");
+    cont = 2;
+  } else {
+    toggleDisplay("#astuce2", "#astuce1");
+    cont = 1;
+  }
+  reinitLoop(4000);
+}
+
+function prevImage() {
+  if (cont === 1) {
+    toggleDisplay("#astuce1", "#astuce2");
+    cont = 2;
+  } else {
+    toggleDisplay("#astuce2", "#astuce1");
+    cont = 1;
+  }
+  reinitLoop(4000);
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const astuce2 = document.getElementById("astuce2");
+  astuce2.style.display = "none";
+  loopSlider();
+});
+

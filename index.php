@@ -32,8 +32,31 @@
         <section id="actu">
             <?php include_once 'view/actu.html'; ?>
         </section>
+        <section id="campagne">
+            <?php include_once 'view/notre-campagne.html'; ?>
+        </section>
+
+        <section id="video">
+            <?php include_once 'view/video-top.html'; ?>
+        </section>
         <section id="banner-color">
             <?php include_once 'view/banner-color.html'; ?>
+        </section>
+        <section id="video">
+            <?php include_once 'view/video.html'; ?>
+        </section>
+
+        <section id="astuces">
+            <?php include_once 'view/astuces.html'; ?>
+        </section>
+        <section id="scrolling banner">
+            <?php include_once 'view/scrolling-banner-before-contact.html'; ?>
+        </section>
+        <section id="contact">
+            <?php include_once 'view/contact.html'; ?>
+        </section>
+        <section id="footer">
+            <?php include_once 'view/footer.html'; ?>
         </section>
     </main>
     <script src="js/script.js" defer></script>

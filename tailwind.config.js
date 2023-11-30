@@ -17,6 +17,8 @@ module.exports = {
         yellow: "#F2C107",
         orange: "#E96404",
         grey: "#EBE5DE",
+        bluevideo: "#1c60c5",
+        button:"#F39ED6",
       },
       fontWeight: {
         extrabold: 800,
