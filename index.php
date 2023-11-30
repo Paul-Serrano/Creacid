@@ -32,11 +32,7 @@
         <section id="actu">
             <?php include_once 'view/actu.html'; ?>
         </section>
-        <section id="campagne">
-            <?php include_once 'view/notre-campagne.html'; ?>
-        </section>
-
-        <section id="video">
+        <section id="video-top">
             <?php include_once 'view/video-top.html'; ?>
         </section>
         <section id="banner-color">
@@ -55,9 +51,9 @@
         <section id="contact">
             <?php include_once 'view/contact.html'; ?>
         </section>
-        <section id="footer">
-            <?php include_once 'view/footer.html'; ?>
-        </section>
+        <footer id="footer" class="bg-black">
+            <?php include_once 'view/footer1.html'; ?>
+        </footer>
     </main>
     <script src="js/script.js" defer></script>
 </body>

@@ -6,6 +6,7 @@ module.exports = {
     "src/input.css",
     "js/scripts.js",
     "view/*.html",
+    "cgu.php",
   ],
   theme: {
     extend: {
@@ -18,7 +19,7 @@ module.exports = {
         orange: "#E96404",
         grey: "#EBE5DE",
         bluevideo: "#1c60c5",
-        button:"#F39ED6",
+        button: "#F39ED6",
       },
       fontWeight: {
         extrabold: 800,
@@ -28,6 +29,7 @@ module.exports = {
       fontSize: {
         title: "2rem",
         content: "1rem",
+        bigtitle: "3rem",
         intro: "4.5rem",
         us: "6rem",
       },

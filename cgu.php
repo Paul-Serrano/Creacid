@@ -9,12 +9,15 @@
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Jura:wght@400;600;700&family=Raleway:ital,wght@0,300;0,400;0,600;0,700;0,800;0,900;1,300;1,400;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,400;1,300;1,400;1,700&display=swap"
         rel="stylesheet"
         />
-        <link href="dist/output.css" rel="stylesheet" />
+        <link href="./dist/output.css" rel="stylesheet" />
         <title>Le mois sans IA</title>
     </head>
     <body>
-        <main class="bg-grey w-100 h-auto font-primary w-full p-10">
-            <div class="grid">
+        <main class="bg-grey h-auto font-primary w-full">
+            <nav role="navigation">
+                <?php include_once "./view/nav.html" ;?>
+            </nav>
+            <div class="grid p-10">
                 <h1 class="text-cgu-title font-introbold">Conditions générales d’utilisation</h1>
                 <div class="grid">
                     <h3 class="text-content font-introbold my-5">En vigueur au 01/12/2023</h3>
@@ -81,7 +84,11 @@
                     <p>Pour toute question relative à l’application des présentes CGU, vous pouvez joindre l’éditeur aux coordonnées inscrites à l’ARTICLE 1. CGU réalisées sur http://legalplace.fr/</p>
                 </div>
             </div>
+            <footer id="footer" class="bg-black">
+                <?php include_once "./view/footer1.html" ;?>
+            </footer>
         </main>
+        <script src="js/script-cgu.js" defer></script>
     </body>
 </html>
 

@@ -1,22 +1,3 @@
-// nav, scroll to the part
-
-// let nav = document.querySelector("#nav-items");
-
-// for (let i = 0; i < nav.length(); i++) {
-//   nav[i].on("click", (e) => {});
-// }
-
-// Scrolling banner
-
-// function updateCarousel() {
-//   const itemWidth = document.querySelector(".carousel-item").offsetWidth;
-//   const newTransformValue = -currentIndex * itemWidth + "px";
-//   console.log(itemWidth);
-//   console.log(newTransformValue);
-//   document.querySelector(".carousel-content").style.transform =
-//     "translateX(" + newTransformValue + ")";
-// }
-
 // Carousel
 
 const carouselButtons = document.querySelectorAll("#carousel-buttons button");
@@ -221,6 +202,7 @@ function noShowActu() {
 // Close menu
 
 let menu = document.querySelector("#menu");
+console.log(menu);
 let menuItems = document.querySelectorAll("#menu a");
 
 for (let i = 0; i < menuItems.length; i++) {
@@ -230,9 +212,7 @@ for (let i = 0; i < menuItems.length; i++) {
   });
 }
 
-
 // Carousel
-
 
 function nextSlide() {
   slides[currentIndex].classList.add("hidden");
@@ -247,7 +227,6 @@ function nextSlide() {
     slides[currentIndex].classList.remove("grid");
   }
   slides[currentIndex].classList.add("grid");
-  // updateCarousel();
 }
 
 function prevSlide() {
@@ -262,7 +241,6 @@ function prevSlide() {
     slides[currentIndex].classList.remove("grid");
   }
   slides[currentIndex].classList.add("grid");
-  // updateCarousel();
 }
 
 function openNav() {
@@ -277,8 +255,6 @@ function closeNav() {
   menu.classList.add("hidden");
 }
 
-
-
 // Scrolling banner
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -289,20 +265,16 @@ document.addEventListener("DOMContentLoaded", function () {
   scrollingBanner.innerHTML = bannerContent + bannerContent;
 });
 
-
-
-
 // Formulaire de contact Popup
 function afficherPopup() {
-  document.getElementById('messagePopup').style.display = 'flex';
-  document.body.style.overflow = 'hidden'; // Bloquer le défilement
+  document.getElementById("messagePopup").style.display = "flex";
+  document.body.style.overflow = "hidden"; // Bloquer le défilement
 }
 
 function cacherPopup() {
-  document.getElementById('messagePopup').style.display = 'none';
-  document.body.style.overflow = ''; // Réactiver le défilement
+  document.getElementById("messagePopup").style.display = "none";
+  document.body.style.overflow = ""; // Réactiver le défilement
 }
-
 
 let cont = 1;
 let xx;
@@ -359,4 +331,3 @@ document.addEventListener("DOMContentLoaded", function () {
   astuce2.style.display = "none";
   loopSlider();
 });
-
