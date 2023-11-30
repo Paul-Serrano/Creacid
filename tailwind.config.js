@@ -57,7 +57,7 @@ module.exports = {
       },
       animation: {
         banner: "banner 10s forwards linear infinite",
-        "color-banner": "color-banner 20s linear infinite",
+        "color-banner": "color-banner 15s linear infinite",
       },
       translate: {
         "banner-right": "-200%",
@@ -65,16 +65,4 @@ module.exports = {
       },
     },
   },
-  // plugins: [
-  //   function ({ addUtilities, theme, variants }) {
-  //     const keyframes = {
-  //       "@keyframes scroll": {
-  //         from: { transform: "translateX(100%)" },
-  //         to: { transform: "translateX(-100%)" },
-  //       },
-  //     };
-
-  //     addUtilities(keyframes, ["responsive", "hover"]);
-  //   },
-  // ],
 };

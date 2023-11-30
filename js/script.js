@@ -52,23 +52,6 @@ function closeNav() {
 
 const carouselItems = document.querySelectorAll(".carousel-item");
 
-function closeCar() {
-  for (let i = 0; i < carouselItems.length; i++) {
-    if (carouselItems[i].classList.contains("grid")) {
-      carouselItems[i].classList.remove("grid");
-      carouselItems[i].classList.add("hidden");
-      carouselButtons[i].classList.add("opacity-30");
-    }
-  }
-}
-
-function openCar(i) {
-  closeCar();
-  carouselItems[i].classList.remove("hidden");
-  carouselItems[i].classList.add("grid");
-  carouselButtons[i].classList.remove("opacity-30");
-}
-
 let touchStartX = 0;
 let touchEndX = 0;
 
@@ -90,9 +73,7 @@ function handleTouchEnd() {
   const difference = touchStartX - touchEndX;
 
   if (Math.abs(difference) > 50) {
-    // Si la différence est assez grande, considérez-le comme un swipe
     if (difference > 0) {
-      // Swipe vers la gauche, faites défiler vers la diapo suivante
       nextSlide();
     } else {
       prevSlide();
@@ -159,9 +140,7 @@ function risksHandleTouchEnd() {
   const difference = touchStartX - touchEndX;
 
   if (Math.abs(difference) > 50) {
-    // Si la différence est assez grande, considérez-le comme un swipe
     if (difference > 0) {
-      // Swipe vers la gauche, faites défiler vers la diapo suivante
       nextRisksSlide();
     } else {
       prevRisksSlide();
@@ -210,7 +189,7 @@ for (let i = 0; i < menuItems.length; i++) {
   });
 }
 
-// Carousel
+// phone nav
 
 function openNav() {
   menu = document.querySelector("#menu");
@@ -226,23 +205,22 @@ function closeNav() {
 
 // Scrolling banner
 
-document.addEventListener("DOMContentLoaded", function () {
-  const scrollingBanner = document.getElementById("scrolling-banner");
-  const bannerContent = scrollingBanner.innerHTML;
+// document.addEventListener("DOMContentLoaded", function () {
+//   const scrollingBanner = document.getElementById("scrolling-banner");
+//   const bannerContent = scrollingBanner.innerHTML;
 
-  // Dupliquer le contenu pour assurer le défilement continu
-  scrollingBanner.innerHTML = bannerContent + bannerContent;
-});
+//   scrollingBanner.innerHTML = bannerContent + bannerContent;
+// });
 
 // Formulaire de contact Popup
 function afficherPopup() {
   document.getElementById("messagePopup").style.display = "flex";
-  document.body.style.overflow = "hidden"; // Bloquer le défilement
+  document.body.style.overflow = "hidden";
 }
 
 function cacherPopup() {
   document.getElementById("messagePopup").style.display = "none";
-  document.body.style.overflow = ""; // Réactiver le défilement
+  document.body.style.overflow = "";
 }
 
 let cont = 1;
