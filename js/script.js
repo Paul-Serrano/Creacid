@@ -9,7 +9,6 @@ const totalSlides = slides.length;
 function nextSlide() {
   slides[currentIndex].classList.add("hidden");
   carouselButtons[currentIndex].classList.add("opacity-30");
-  console.log("next" + currentIndex);
   if (currentIndex < totalSlides - 1) {
     currentIndex++;
     slides[currentIndex].classList.remove("hidden");
@@ -202,7 +201,6 @@ function noShowActu() {
 // Close menu
 
 let menu = document.querySelector("#menu");
-console.log(menu);
 let menuItems = document.querySelectorAll("#menu a");
 
 for (let i = 0; i < menuItems.length; i++) {
@@ -213,35 +211,6 @@ for (let i = 0; i < menuItems.length; i++) {
 }
 
 // Carousel
-
-function nextSlide() {
-  slides[currentIndex].classList.add("hidden");
-  console.log("next" + currentIndex);
-  if (currentIndex < totalSlides - 1) {
-    currentIndex++;
-    slides[currentIndex].classList.remove("hidden");
-    slides[currentIndex].classList.remove("grid");
-  } else {
-    currentIndex = 0;
-    slides[currentIndex].classList.remove("hidden");
-    slides[currentIndex].classList.remove("grid");
-  }
-  slides[currentIndex].classList.add("grid");
-}
-
-function prevSlide() {
-  slides[currentIndex].classList.add("hidden");
-  if (currentIndex > 0) {
-    currentIndex--;
-    slides[currentIndex].classList.remove("hidden");
-    slides[currentIndex].classList.remove("grid");
-  } else {
-    currentIndex = totalSlides - 1;
-    slides[currentIndex].classList.remove("hidden");
-    slides[currentIndex].classList.remove("grid");
-  }
-  slides[currentIndex].classList.add("grid");
-}
 
 function openNav() {
   menu = document.querySelector("#menu");

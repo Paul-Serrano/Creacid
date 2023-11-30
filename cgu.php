@@ -15,7 +15,7 @@
     <body>
         <main class="bg-grey h-auto font-primary w-full">
             <nav role="navigation">
-                <?php include_once "./view/nav.html" ;?>
+                <?php include_once "./view/nav-cgu.html" ;?>
             </nav>
             <div class="grid p-10">
                 <h1 class="text-cgu-title font-introbold">Conditions générales d’utilisation</h1>

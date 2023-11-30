@@ -12,49 +12,48 @@
     <link href="dist/output.css" rel="stylesheet" />
     <title>Le MOI sans IA</title>
 </head>
-<body>
-    <main class="bg-grey w-100 h-auto font-primary">
-        <nav role="navigation">
-            <?php include_once 'view/nav.html'; ?>
-        </nav>
-        <section id="intro">
-            <?php include_once 'view/intro.html'; ?>
-        </section>
-        <section id="banner">
-            <?php include_once 'view/scrolling-banner.html'; ?>
-        </section>
-        <section id="us">
-            <?php include_once 'view/us.html'; ?>
-        </section>
-        <section id="risks">
-            <?php include_once 'view/risks.html'; ?>
-        </section>
-        <section id="actu">
-            <?php include_once 'view/actu.html'; ?>
-        </section>
-        <section id="video-top">
-            <?php include_once 'view/video-top.html'; ?>
-        </section>
-        <section id="banner-color">
-            <?php include_once 'view/banner-color.html'; ?>
-        </section>
-        <section id="video">
-            <?php include_once 'view/video.html'; ?>
-        </section>
-
-        <section id="astuces">
-            <?php include_once 'view/astuces.html'; ?>
-        </section>
-        <section id="scrolling banner">
-            <?php include_once 'view/scrolling-banner-before-contact.html'; ?>
-        </section>
-        <section id="contact">
-            <?php include_once 'view/contact.html'; ?>
-        </section>
-        <footer id="footer" class="bg-black">
-            <?php include_once 'view/footer1.html'; ?>
-        </footer>
-    </main>
-    <script src="js/script.js" defer></script>
-</body>
+    <body>
+        <main class="bg-grey w-100 h-auto font-primary">
+            <nav role="navigation">
+                <?php include_once 'view/nav.html'; ?>
+            </nav>
+            <section id="intro">
+                <?php include_once 'view/intro.html'; ?>
+            </section>
+            <section id="banner">
+                <?php include_once 'view/scrolling-banner.html'; ?>
+            </section>
+            <section id="us">
+                <?php include_once 'view/us.html'; ?>
+            </section>
+            <section id="risks">
+                <?php include_once 'view/risks.html'; ?>
+            </section>
+            <section id="actu">
+                <?php include_once 'view/actu.html'; ?>
+            </section>
+            <section id="video-top">
+                <?php include_once 'view/video-top.html'; ?>
+            </section>
+            <section id="banner-color">
+                <?php include_once 'view/banner-color.html'; ?>
+            </section>
+            <section id="video">
+                <?php include_once 'view/video.html'; ?>
+            </section>
+            <section id="astuces">
+                <?php include_once 'view/astuces.html'; ?>
+            </section>
+            <section id="scrolling banner">
+                <?php include_once 'view/scrolling-banner-before-contact.html'; ?>
+            </section>
+            <section id="contact">
+                <?php include_once 'view/contact.html'; ?>
+            </section>
+            <footer id="footer" class="bg-black">
+                <?php include_once 'view/footer1.html'; ?>
+            </footer>
+        </main>
+        <script src="js/script.js" defer></script>
+    </body>
 </html>
