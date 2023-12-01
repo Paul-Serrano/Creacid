@@ -14,10 +14,10 @@
 </head>
     <body>
         <main class="bg-grey w-100 h-auto font-primary">
-            <nav role="navigation">
+            <nav role="navigation" class="fixed w-full z-50">
                 <?php include_once 'view/nav.html'; ?>
             </nav>
-            <section id="intro">
+            <section id="intro" class="pt-[10rem]">
                 <?php include_once 'view/intro.html'; ?>
             </section>
             <section id="banner">
