@@ -54,10 +54,15 @@ module.exports = {
           "83%": { "background-color": "#E96404" },
           "100%": { "background-color": "#F2C107" },
         },
+        "defilement-texte": {
+          "0%": { transform: "translateX(100%)" },
+          "100%": { transform: "translateX(-100%)" },
+        },
       },
       animation: {
         banner: "banner 10s forwards linear infinite",
         "color-banner": "color-banner 15s linear infinite",
+        scroll: "defilement-texte 10s linear infinite",
       },
       translate: {
         "banner-right": "-200%",

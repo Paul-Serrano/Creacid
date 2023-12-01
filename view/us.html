@@ -1,95 +1,104 @@
 <div class="mt-10 mb-20" id="presentation">
-  <h2 class="text-center text-title sm:text-intro md:text-us font-introbold">Qui sommes-nous ?</h2>
-    <div id="carousel" class="grid grid-cols-12 mx-auto w-11/12 relative place-items-center md:h-[30rem] h-[40rem]">
-      <div class="absolute hidden md:flex justify-between z-20 w-[100%] top-[50%]">
-        <button
-        class="col-span-1 relative left-[-2.5rem]"
-        onclick="prevSlide()"
-        >
-          <img src="./img/prev-button.png" alt="bouton précédent" />
-        </button>
-        <button
-          class="col-span-1 relative right-[-2.5rem]"
-          onclick="nextSlide()"
-        >
-          <img src="./img/next-button.png" alt="bouton suivant" />
-        </button>
-      </div>
-      <div class="carousel-content col-span-10 col-start-2 relative z-10 m-auto">
-        <div class="carousel-item grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-2 place-items-center">
-          <div class="carousel-img grid place-items-center">
-            <img src="./img/us.png" alt="nous" />
-          </div>
-          <div class="carousel-txt">
-            <h3 class="font-introbold text-title md:text-5xl">Notre association</h3>
-            <p class="font-Roboto my-5">
-              Nous sommes une association qui a pour objectif de souligner
-              l'importance des nouvelles technologies dans notre société et
-              de sensibiliser les individus aux limites actuelles et futures
-              des technologies numériques.
-            </p>
-            <p class="font-Roboto">
-              Nous créons le “Moi sans IA” pour lutter contre la dépendance
-              excessive aux IAs.
-            </p>
-          </div>
+  <h2 class="text-center text-title sm:text-intro md:text-us font-introbold">
+    Qui sommes-nous ?
+  </h2>
+  <div
+    id="carousel"
+    class="grid grid-cols-12 mx-auto w-11/12 relative place-items-center md:h-[30rem] h-[40rem]"
+  >
+    <div
+      class="absolute hidden md:flex justify-between z-20 w-[100%] top-[50%]"
+    >
+      <button class="col-span-1 relative left-[-2.5rem]" onclick="prevSlide()">
+        <img src="./img/prev-button.png" alt="bouton précédent" />
+      </button>
+      <button class="col-span-1 relative right-[-2.5rem]" onclick="nextSlide()">
+        <img src="./img/next-button.png" alt="bouton suivant" />
+      </button>
+    </div>
+    <div class="carousel-content col-span-10 col-start-2 relative z-10 m-auto">
+      <div
+        class="carousel-item grid grid-cols-1 md:grid-cols-2 gap-x-5 gap-y-2 place-items-center"
+      >
+        <div class="carousel-img grid place-items-center">
+          <img src="./img/us.png" alt="nous" />
         </div>
+        <div class="carousel-txt">
+          <h3 class="font-introbold text-title md:text-5xl">
+            Notre association
+          </h3>
+          <p class="font-Roboto my-5">
+            Nous sommes une association qui a pour objectif de souligner
+            l'importance des nouvelles technologies dans notre société et de
+            sensibiliser les individus aux limites actuelles et futures des
+            technologies numériques.
+          </p>
+          <p class="font-Roboto">
+            Nous créons le “Moi sans IA” pour lutter contre la dépendance
+            excessive aux IAs.
+          </p>
+        </div>
+      </div>
 
-        <div class="carousel-item grid-cols-1 md:grid-cols-2 hidden gap-5 place-items-center">
-          <div class="carousel-txt">
-            <h3 class="font-introbold text-title md:text-5xl">Notre objectif</h3>
-            <p class="font-Roboto my-5">
-              Ce dispositif prendra part dans toute la France (y compris les
-              Outre-Mer). Son objectif est de sensibiliser les utilisateurs
-              de technologie, aux limites et aux dangers de l’intelligence
-              artificiel
-            </p>
-            <p class="font-Roboto">
-              Comme le disait Descartes, <b>“Je pense, donc je suis'”</b>:
-              l'essence de l'humanité se trouve dans notre capacité à
-              penser, réfléchir et créer. Cette campagne encourage donc à
-              penser différemment, à se détacher des outils technologiques
-              et à retrouver notre essence humaine.
-            </p>
-            <p class="font-bold mt-5">#ThinkDifferent #ThinkHuman</p>
-          </div>
-          <div class="carousel-img grid place-items-center row-start-1">
-            <img class="md:w-[75%] w-[50%]" src="./img/robot.png" alt="robot" />
-          </div>
+      <div
+        class="carousel-item grid-cols-1 md:grid-cols-2 hidden gap-5 place-items-center"
+      >
+        <div class="carousel-txt">
+          <h3 class="font-introbold text-title md:text-5xl">Notre objectif</h3>
+          <p class="font-Roboto my-5">
+            Ce dispositif prendra part dans toute la France (y compris les
+            Outre-Mer). Son objectif est de sensibiliser les utilisateurs de
+            technologie, aux limites et aux dangers de l’intelligence artificiel
+          </p>
+          <p class="font-Roboto">
+            Comme le disait Descartes, <b>“Je pense, donc je suis'”</b>:
+            l'essence de l'humanité se trouve dans notre capacité à penser,
+            réfléchir et créer. Cette campagne encourage donc à penser
+            différemment, à se détacher des outils technologiques et à retrouver
+            notre essence humaine.
+          </p>
+          <p class="font-bold mt-5">#ThinkDifferent #ThinkHuman</p>
         </div>
+        <div class="carousel-img grid place-items-center row-start-1">
+          <img class="md:w-[75%] w-[50%]" src="./img/robot.png" alt="robot" />
+        </div>
+      </div>
 
-        <div class="carousel-item hidden grid-cols-1 md:grid-cols-2 gap-5 place-items-c
-        ">
-          <div class="carousel-img grid place-items-center">
-            <img class="w-[50%]" src="./img/april.png" alt="1er avril" />
-          </div>
-          <div class="carousel-txt">
-            <h3 class="font-introbold text-title md:text-5xl leading-[50px]">Notre RDV</h3>
-            <p class="font-Roboto mt-5">
-              Nous nous retrouverons <b>chaque mois d’Avril</b> pour un mois
-              où nous diminuerons notre utilisation des intelligences
-              artificiel.
-            </p>
-            <p class="font-Roboto my-5">
-              Le but n’est pas, de ne plus utiliser les nouvelles
-              technologie, donc les IAs, car il est difficile de concevoir
-              notre vie au 21ème siècle sans notre téléphone ou sans
-              internet. Mais le but est d’apprendre à mieux les utiliser en
-              étant conscient
-              <b>des risques</b> liés à elles.
-            </p>
-            <p class="font-Roboto">
-              Nous vous apprendrons comment mieux appréhender ce mois en
-              vous donnant <b>des astuces</b>
-            </p>
-          </div>
+      <div
+        class="carousel-item hidden grid-cols-1 md:grid-cols-2 gap-5 place-items-c"
+      >
+        <div class="carousel-img grid place-items-center">
+          <img class="w-[50%]" src="./img/april.png" alt="1er avril" />
+        </div>
+        <div class="carousel-txt">
+          <h3 class="font-introbold text-title md:text-5xl leading-[50px]">
+            Notre RDV
+          </h3>
+          <p class="font-Roboto mt-5">
+            Nous nous retrouverons <b>chaque mois d’Avril</b> pour un mois où
+            nous diminuerons notre utilisation des intelligences artificiel.
+          </p>
+          <p class="font-Roboto my-5">
+            Le but n’est pas, de ne plus utiliser les nouvelles technologie,
+            donc les IAs, car il est difficile de concevoir notre vie au 21ème
+            siècle sans notre téléphone ou sans internet. Mais le but est
+            d’apprendre à mieux les utiliser en étant conscient
+            <b>des risques</b> liés à elles.
+          </p>
+          <p class="font-Roboto">
+            Nous vous apprendrons comment mieux appréhender ce mois en vous
+            donnant <b>des astuces</b>
+          </p>
         </div>
       </div>
-      <div id="carousel-buttons" class="w-4/12 md:w-2/12 grid grid-cols-3 gap-x-1 absolute bottom-[-2rem] md:bottom-0 place-items-center">
-        <button class="bg-green w-[85%] h-2 rounded"></button>
-        <button class="bg-green w-[85%] h-2 rounded opacity-30"></button>
-        <button class="bg-green w-[85%] h-2 rounded opacity-30"></button>
-      </div>
-  </div>
+    </div>
+    <div
+      id="carousel-buttons"
+      class="w-4/12 md:w-2/12 grid grid-cols-3 gap-x-1 absolute bottom-[-2rem] md:bottom-0 place-items-center"
+    >
+      <button class="bg-green w-[85%] h-2 rounded"></button>
+      <button class="bg-green w-[85%] h-2 rounded opacity-30"></button>
+      <button class="bg-green w-[85%] h-2 rounded opacity-30"></button>
+    </div>
   </div>
 </div>

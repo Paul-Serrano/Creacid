@@ -44,7 +44,7 @@
             <section id="astuces">
                 <?php include_once 'view/astuces.html'; ?>
             </section>
-            <section id="scrolling banner">
+            <section id="scrolling-banner">
                 <?php include_once 'view/scrolling-banner-before-contact.html'; ?>
             </section>
             <section id="contact">
