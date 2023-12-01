@@ -869,6 +869,10 @@ video {
   width: 91.666667%;
 }
 
+.w-3\/12 {
+  width: 25%;
+}
+
 .w-4\/12 {
   width: 33.333333%;
 }
@@ -923,10 +927,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-3\/12 {
-  width: 25%;
 }
 
 .transform {
@@ -1413,6 +1413,10 @@ video {
 
 .font-medium {
   font-weight: 500;
+}
+
+.uppercase {
+  text-transform: uppercase;
 }
 
 .leading-\[50px\] {
