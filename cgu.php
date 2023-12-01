@@ -14,7 +14,7 @@
     </head>
     <body>
         <main class="bg-grey h-auto font-primary w-full">
-            <nav role="navigation" class="fixed w-full z-50 bg-grey">
+            <nav class="fixed w-full z-50 bg-grey">
                 <?php include_once "./view/nav-cgu.html" ;?>
             </nav>
             <div class="grid p-10 pt-[10rem]">
