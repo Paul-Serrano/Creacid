@@ -14,10 +14,10 @@
     </head>
     <body>
         <main class="bg-grey h-auto font-primary w-full">
-            <nav role="navigation">
+            <nav role="navigation" class="fixed w-full z-50 bg-grey">
                 <?php include_once "./view/nav-cgu.html" ;?>
             </nav>
-            <div class="grid p-10">
+            <div class="grid p-10 pt-[10rem]">
                 <h1 class="text-cgu-title font-introbold">Conditions générales d’utilisation</h1>
                 <div class="grid">
                     <h3 class="text-content font-introbold my-5">En vigueur au 01/12/2023</h3>
