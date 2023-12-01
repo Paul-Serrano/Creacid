@@ -14,7 +14,7 @@
 </head>
     <body>
         <main class="bg-grey w-100 h-auto font-primary">
-            <nav role="navigation" class="fixed w-full z-50">
+            <nav role="navigation" class="fixed w-full z-50 bg-grey">
                 <?php include_once 'view/nav.html'; ?>
             </nav>
             <section id="intro" class="pt-[10rem]">
