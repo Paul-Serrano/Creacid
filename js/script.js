@@ -203,15 +203,6 @@ function closeNav() {
   menu.classList.add("hidden");
 }
 
-// Scrolling banner
-
-// document.addEventListener("DOMContentLoaded", function () {
-//   const scrollingBanner = document.getElementById("scrolling-banner");
-//   const bannerContent = scrollingBanner.innerHTML;
-
-//   scrollingBanner.innerHTML = bannerContent + bannerContent;
-// });
-
 // Formulaire de contact Popup
 function afficherPopup() {
   document.getElementById("messagePopup").style.display = "flex";
@@ -226,13 +217,21 @@ function cacherPopup() {
 let cont = 1;
 let xx;
 
+let astuceButtons = document.querySelectorAll(
+  "#astuce-carousel-buttons button"
+);
+
 function loopSlider() {
   xx = setInterval(function () {
     if (cont === 1) {
       toggleDisplay("#astuce1", "#astuce2");
+      astuceButtons[0].classList.add("opacity-30");
+      astuceButtons[1].classList.remove("opacity-30");
       cont = 2;
     } else {
       toggleDisplay("#astuce2", "#astuce1");
+      astuceButtons[1].classList.add("opacity-30");
+      astuceButtons[0].classList.remove("opacity-30");
       cont = 1;
     }
   }, 8000);
@@ -251,12 +250,42 @@ function toggleDisplay(hideSelector, showSelector) {
   showElement.style.display = "block";
 }
 
+let astuceCarousel = document.querySelector("#astuce-carousel");
+
+astuceCarousel.addEventListener("touchstart", astuceHandleTouchStart, false);
+astuceCarousel.addEventListener("touchmove", astuceHandleTouchMove, false);
+astuceCarousel.addEventListener("touchend", astuceHandleTouchEnd, false);
+
+function astuceHandleTouchStart(event) {
+  touchStartX = event.touches[0].clientX;
+}
+
+function astuceHandleTouchMove(event) {
+  touchEndX = event.touches[0].clientX;
+}
+
+function astuceHandleTouchEnd() {
+  const difference = touchStartX - touchEndX;
+
+  if (Math.abs(difference) > 50) {
+    if (difference > 0) {
+      nextImage();
+    } else {
+      prevImage();
+    }
+  }
+}
+
 function nextImage() {
   if (cont === 1) {
     toggleDisplay("#astuce1", "#astuce2");
+    astuceButtons[0].classList.add("opacity-30");
+    astuceButtons[1].classList.remove("opacity-30");
     cont = 2;
   } else {
     toggleDisplay("#astuce2", "#astuce1");
+    astuceButtons[1].classList.add("opacity-30");
+    astuceButtons[0].classList.remove("opacity-30");
     cont = 1;
   }
   reinitLoop(4000);
@@ -265,9 +294,13 @@ function nextImage() {
 function prevImage() {
   if (cont === 1) {
     toggleDisplay("#astuce1", "#astuce2");
+    astuceButtons[0].classList.add("opacity-30");
+    astuceButtons[1].classList.remove("opacity-30");
     cont = 2;
   } else {
     toggleDisplay("#astuce2", "#astuce1");
+    astuceButtons[1].classList.add("opacity-30");
+    astuceButtons[0].classList.remove("opacity-30");
     cont = 1;
   }
   reinitLoop(4000);

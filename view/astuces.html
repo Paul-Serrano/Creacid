@@ -1,9 +1,9 @@
 <div class="grid grid-cols-4 w-full bg-gray">
   <div
-    class="h-32 mb-5 text-title md:text-9xl font-extrabold leading-none tracking-normal col-span-4"
+    class="h-32 mb-5 leading-none tracking-normal col-span-4"
     id="carousel-title"
   >
-    Nos astuces
+    <p class="text-bigtitle md:text-intro font-extrabold">Nos astuces</p>
   </div>
   <div class="pl-20 md:flex hidden items-center h-96">
     <img
@@ -12,7 +12,7 @@
       alt="bouton precedent"
     />
   </div>
-  <div class="md:col-span-2 col-span-4 w-full" id="carousel">
+  <div class="md:col-span-2 col-span-4 w-full" id="astuce-carousel">
     <img
       src="./img/astuces1.JPG"
       alt=""
@@ -33,4 +33,11 @@
       alt="bouton suivant"
     />
   </div>
+</div>
+<div
+  id="astuce-carousel-buttons"
+  class="w-3/12 grid grid-cols-2 gap-x-1 bottom-[-2rem] md:bottom-0 place-items-center m-auto"
+>
+  <button class="bg-yellow w-[85%] h-2 rounded"></button>
+  <button class="bg-yellow w-[85%] h-2 rounded opacity-30"></button>
 </div>
